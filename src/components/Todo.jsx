@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaRegTrashCan } from "react-icons/fa6"
 
-import style from './todo.module.css'
+import style from '../assets/css/todo.module.css'
 
 export default function Todo(props) {
     const {id,title,description} = props.todo;

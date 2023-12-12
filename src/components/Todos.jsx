@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Todo from './Todo'
-import style from './todos.module.css'
+import style from '../assets/css/todos.module.css'
 
 export default function Todos(props) {
     const {todos} = props;
