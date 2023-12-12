@@ -7,7 +7,8 @@ export default function Todos(props) {
     const {todos} = props;
   return (
     <section className={style.todos}>
-      {todos.map((todo) => <Todo key={todo.id} todo={todo} />)}
+      {todos.map((todo) => 
+      <Todo key={todo.id} todo={todo} />)}
     </section>
   )
 }

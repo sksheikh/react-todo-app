@@ -1,6 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { FaRegTrashCan } from "react-icons/fa6"
 
 import style from './todo.module.css'
 
@@ -16,7 +15,7 @@ export default function Todo(props) {
 
         <div>
             <button className={style.btn}>
-                <FontAwesomeIcon icon={faTrash} />
+                <FaRegTrashCan />
             </button>
         </div>
     </article>
