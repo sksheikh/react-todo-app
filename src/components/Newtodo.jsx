@@ -18,7 +18,7 @@ export default function Newtodo() {
     </div>
 
    
-    <button type='submit'>add todo</button>
+    <button type='submit'>add new todo</button>
     
 
     </form>
