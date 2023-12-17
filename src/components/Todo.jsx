@@ -4,7 +4,13 @@ import { FaRegTrashCan } from "react-icons/fa6"
 import style from '../assets/css/todo.module.css'
 
 export default function Todo(props) {
-    const {id,title,description} = props.todo;
+    const {title,description} = props.todo;
+    const {id} = props
+    // console.log(id);
+
+    const handleClick = ()=> {
+        props.onRemoveTodo(id);
+    }
 
   return (
     <article className={style.todo}>
@@ -14,7 +20,8 @@ export default function Todo(props) {
         </div>
 
         <div>
-            <button className={style.btn}>
+            <button className={style.btn}
+                onClick={handleClick}>
                 <FaRegTrashCan />
             </button>
         </div>
